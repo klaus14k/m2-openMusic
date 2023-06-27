@@ -1,1 +1,119 @@
-/* Desenvolva sua estilização aqui ... */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 0;
+}
+header > img {
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: var(--color-grey-8);
+}
+#themeButton:hover {
+    cursor: pointer;
+}
+
+#musicalGenre {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#musicalGenre > ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.genreButton {
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius-1);
+    border: 1px solid var(--color-grey-8);
+    background-color: var(--color-grey-8);
+    color: var(--color-grey-2);
+    font-size: var(--font-3);
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+}
+.genreButton:hover {
+    border: 1px solid var(--color-grey-1);
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.pressed {
+    background-color: var(--color-grey-1);
+    color: var(--color-grey-8);
+    border-color: var(--color-grey-1);
+}
+
+#definePrice {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem 0;
+}
+#definePrice > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section__products {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-bottom: 4rem;
+}
+#productList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4%;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 48%;
+    margin-bottom: 3rem;
+
+    border-radius: var(--radius-1);
+    border: 1px solid var(--color-grey-8);
+    background-color: var(--color-grey-8);
+}
+.cardP {
+    padding: 0 1rem;
+    font-weight: 500;
+    font-size: 12px;
+}
+.cardH2 {
+    padding: 0 1rem;
+    font-weight: 600;
+    font-size: var(--font-2);
+}
+.cardSpan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    padding-bottom: 1.5rem;
+    font-weight: 600;
+    font-size: var(--font-2);
+    color: var(--color-grey-1);
+}
+.spanButton {
+    padding: 0.5rem;
+    border-radius: var(--radius-1);
+    border: 1px solid var(--color-grey-8);
+    background-color: var(--color-grey-7);
+    color: var(--color-grey-2);
+    font-size: var(--font-3);
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+}
+.spanButton:hover {
+    border: 1px solid var(--color-brand-1);
+    color: var(--color-brand-1);
+    cursor: pointer;
+}
